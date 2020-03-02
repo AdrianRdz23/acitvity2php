@@ -45,3 +45,15 @@ Route::get('/login', function(){
     });
     
  Route::post('/dologin3','Login3Controller@index');
+ 
+ Route::get('/login4',function(){
+     return view('login4');
+ });
+     
+     Route::post('/dologin4','Login4Controller@index');
+     
+     Route::get('/login5',function(){
+         return view('login5');
+     });
+         
+         Route::post('/dologin5','Login5Controller@index');

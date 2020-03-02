@@ -34,7 +34,7 @@ class Login3Controller extends Controller{
             return view('loginPassed')->with($data);
         }
         else{
-            return view('loginFailed');
+            return view('loginFailed3');
         }
 
         }

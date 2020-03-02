@@ -21,8 +21,10 @@ class SecurityService{
         $port = config("database.connections.mysql.port");
         $username = config("database.connections.mysql.username");
         $password = config("database.connections.mysql.password");
-        $dbname = config("database.connections.mysql.databse");
+        $dbname = config("database.connections.mysql.database");
         
+        echo $servername . $port. $username . $password . $dbname;
+        exit;
         //BEST_PRACTICE: Do not create Dtabase Connections in a DAO
         //___(so you can support Atomic Database Transactions)
         //Create connection
